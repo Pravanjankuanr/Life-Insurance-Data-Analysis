@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-Project Title: Life Insurance Analysis
+#### Project Title: Life Insurance Analysis
 
 Database: `LI_DB`
 

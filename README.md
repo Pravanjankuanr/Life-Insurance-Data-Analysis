@@ -3,9 +3,9 @@
 
 ## Project Overview
 
-#### Project Title: Life Insurance Analysis
+### Project Title: Life Insurance Analysis
 
-Database: `LI_DB`
+### Database: `LI_DB`
 
 This project demonstrates the implementation of a Life Insurance using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries.
 
@@ -14,8 +14,8 @@ This project demonstrates the implementation of a Life Insurance using SQL. It i
 
 ## Objective
 
-    1. Set up the Life insurance Database: Create and populate the database with tables for branches,
-       employees, members, books, issued status, and return status.
+    1. Set up the Life insurance Database: Create and populate the database with tables for product,
+       employee, customer, policy_details and policy_type.
     2. CRUD Operations: Perform Create, Read, Update, and Delete operations on the data.
     3. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
     4. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
@@ -27,8 +27,9 @@ This project demonstrates the implementation of a Life Insurance using SQL. It i
 ![Logo](image.png)
 
 - Database Creation: Created a database named `LI_DB`.
-- Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
+- Table Creation: Created tables for product, employee, customer, policy_details and policy_type. Each table includes relevant columns and relationships.
 ```sql
+drop database if exists LI_DB;
 create database if not exists LI_DB;
 
 use LI_DB;

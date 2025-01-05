@@ -8,7 +8,7 @@ Project Title: Life Insurance Analysis
 Database: `LI_DB`
 
 This project demonstrates the implementation of a Life Insurance using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries.
-![Logo](img.png)
+![Logo](Logo.jpg)
 
 
 ## Objective

@@ -82,3 +82,45 @@ create table if not exists policy_details
 );
 
 ```
+### 2. CRUD Operations
+
+- #### Create: Create tables and insert data into the tables.
+```sql
+-- We import the data into the databases through CSV file
+
+insert into policy_type
+ (ptype_code, ptype)
+values
+ (4999, 'New')
+,(3999, 'Renewal');
+```
+- #### Read: Retrieve and display data from various tables.
+```sql
+select * from product;
+select * from customer;
+select * from employee;
+select * from policy_details;
+select * from policy_type;
+```
+- #### Update: Update record in the policy_type table.
+```sql
+#Update Record
+update policy_type
+set ptype = 'NewPolicy'
+where ptype = 'New';
+
+```
+- #### Delete: Remove records from the tables as needed.
+```sql
+
+
+```
+### 3. SHOW Function
+- #### Check all databases
+```sql
+show databases;
+```
+- #### Check all tables in the current database
+```sql
+show tables;
+```

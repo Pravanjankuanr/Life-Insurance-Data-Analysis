@@ -86,8 +86,8 @@ create table if not exists policy_details
 ### 2. CRUD Operations
 
 - #### Create: Create tables and insert data into the tables.
-##### 1. Creation involves three main steps: creating the database, creating tables, and adding data: database and tables already established the next step involves populating the tables with data, mostly data import to the databases through CSV files.
-##### 2. Manual Data Import Method
+  ##### 1. Creation involves three main steps: creating the database, creating tables, and adding data: database and tables already established the next step involves populating the tables with data, mostly data import to the databases through CSV files.
+  ##### 2. Manual Data Import Method
 ```sql
 
 insert into policy_type
@@ -117,12 +117,23 @@ where ptype = 'New';
 
 
 ```
-### 3. SHOW Function
-- #### Check all databases
+### 3. SQL Administrative Commands
+- #### SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.
 ```sql
-show databases;
+show databases; #displays all databases on the server
+
+show tables; #displays all tables in the current database
+
+show columns in product; # 1. displays column information for a specified table
+
+show columns from product; # 2. displays column information for a specified table
+
+show index from product; # 1. displays index information for a specified table
+show index in product; # 2. displays index information for a specified table
+show indexes in product; # 3. displays index information for a specified table
+show indexes from product; # 4. displays index information for a specified table
 ```
 - #### Check all tables in the current database
 ```sql
-show tables;
+
 ```

@@ -165,7 +165,8 @@ modify channel varchar(30) null;
 - #### Change Column Name (Rename Column):
 ```sql
 alter table employee
-change channels channel varchar(30) not null; #Renaming a column often requires updating its data type
+change channels channel varchar(30) not null;
+	#Renaming a column often requires updating its data type
 ```
 ### 5. CTAS (Create Table As Select)
 - #### CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.

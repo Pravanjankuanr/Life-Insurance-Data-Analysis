@@ -141,4 +141,29 @@ show indexes from product; # 4. displays index information for a specified table
 
 ```
 
-### 4. Table Modification Commands
+### 4. Table Modification Commands: Managing and modifying table schema for optimal performance
+- #### Add Column:
+```sql
+alter table product
+add column product_type varchar(20) not null;
+```
+- #### Drop Column:
+```sql
+alter table employee
+drop column channel;
+```
+- #### Rename Table:
+```sql
+alter table emp
+rename to employee;
+```
+- #### Modify Column schema:
+```sql
+alter table employee
+modify channel varchar(30) null;
+```
+- #### Change Column Name (Rename Column):
+```sql
+alter table employee
+change channels channel varchar(30) not null; #Renaming a column often requires updating its data type
+```

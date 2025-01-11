@@ -114,8 +114,10 @@ where ptype = 'New';
 ```
 - #### Delete: Remove records from the tables as needed.
 ```sql
+truncate table employee; #removes all rows from a specified table
 
-
+delete from employee
+where emp_code is null; #delete all rows from employee where conditions are met
 ```
 ### 3. SQL Administrative Commands
 - #### SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.

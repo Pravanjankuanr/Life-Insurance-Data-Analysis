@@ -25,7 +25,7 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
 
 ###    1. Database Setup
 
-![Logo](image.png)
+![Logo](Data_modeling.jpg)
 
 - Database Creation: Created a database named `LI_DB`.
 - Table Creation: Created tables for product, employee, customer, policy_details, and policy_type. Each table includes relevant columns and relationships.

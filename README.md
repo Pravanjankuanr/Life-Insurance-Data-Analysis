@@ -18,8 +18,9 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
        employee, customer, policy_details and policy_type.
     2. CRUD Operations: Perform Create, Read, Update, and Delete operations on the data.
     3. SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.
-    4. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
-    5. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
+    4. Table Modification Commands: Managing and modifying table schema for optimal performance.
+    5. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
+    6. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
 
 ## Project Structure
 
@@ -139,3 +140,5 @@ show indexes from product; # 4. displays index information for a specified table
 ```sql
 
 ```
+
+### 4. Table Modification Commands

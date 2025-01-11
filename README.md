@@ -7,7 +7,7 @@
 
 ### Database: `LI_DB`
 
-This project demonstrates the implementation of a Life Insurance using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries.
+This project demonstrates the implementation of Life Insurance using SQL. It includes creating and managing tables, performing CRUD operations, and executing advanced SQL queries.
 
 ![Logo](Logo.jpg)
 
@@ -17,8 +17,9 @@ This project demonstrates the implementation of a Life Insurance using SQL. It i
     1. Set up the Life insurance Database: Create and populate the database with tables for product,
        employee, customer, policy_details and policy_type.
     2. CRUD Operations: Perform Create, Read, Update, and Delete operations on the data.
-    3. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
-    4. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
+    3. SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.
+    4. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
+    5. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
 
 ## Project Structure
 
@@ -27,7 +28,7 @@ This project demonstrates the implementation of a Life Insurance using SQL. It i
 ![Logo](image.png)
 
 - Database Creation: Created a database named `LI_DB`.
-- Table Creation: Created tables for product, employee, customer, policy_details and policy_type. Each table includes relevant columns and relationships.
+- Table Creation: Created tables for product, employee, customer, policy_details, and policy_type. Each table includes relevant columns and relationships.
 ```sql
 drop database if exists LI_DB;
 create database if not exists LI_DB;
@@ -85,8 +86,9 @@ create table if not exists policy_details
 ### 2. CRUD Operations
 
 - #### Create: Create tables and insert data into the tables.
+##### 1. Creation involves three main steps: creating the database, creating tables, and adding data: database and tables already established the next step involves populating the tables with data, mostly data import to the databases through CSV files.
+##### 2. Manual Data Import Method
 ```sql
--- We import the data into the databases through CSV file
 
 insert into policy_type
  (ptype_code, ptype)

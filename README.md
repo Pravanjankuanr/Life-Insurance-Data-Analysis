@@ -167,3 +167,52 @@ modify channel varchar(30) null;
 alter table employee
 change channels channel varchar(30) not null; #Renaming a column often requires updating its data type
 ```
+### 5. CTAS (Create Table As Select)
+- #### CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
+```sql
+drop table if exists employee_sales;
+create table employee_sales as
+select emp_name, count(proposal_no) as total_sales
+from employee as emp
+join policy_details as pd
+	on emp.emp_code = pd.emp_code
+group by emp_name
+order by total_sales desc;
+
+select * from employee_sales;
+```
+### 6. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data
+- #### Where Clause
+  ##### 1. Retrieve all records with a premium value of 100,000 or higher.
+```sql
+select * 
+from policy_details
+where premium >= 100000;
+```
+  ##### 2. Retrieve all policies issued after '2022-01-01'.
+```sql
+select * 
+from policy_details
+where issue_date > '2022-01-01';
+```
+  ##### 3. Retrieve all policies with a policy status of 'InForce'.
+```sql
+select * 
+from policy_details
+where policy_status = 'InForce';
+```
+- #### Group BY Clause
+  ##### 1. Retrieve the total premium amount for each policy status.
+```sql
+
+```
+  ##### 2. Retrieve all the policies issued for each product code.
+```sql
+
+```
+  ##### 3. Retrieve the average premium term for each premium mode.
+```sql
+
+```
+
+

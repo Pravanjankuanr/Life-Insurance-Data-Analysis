@@ -259,7 +259,18 @@ where policy_status = 'InForce';
 - #### Alias
 
 
-- #### Joins: Combines related table data.
+- #### Joins: Combines related table data
+  - ##### Inner Join: dhd
+```sql
+select ptype as Business_type, count(proposal_no) as  Total_sales, sum(premium) Total_revenue
+from policy_details as pd
+inner join policy_type pt
+	on pd.ptype_code = pt.ptype_code
+group by Business_type
+order by Business_type;
+```
+  - ##### SQL Joins: The Ultimate Data Connection
+#### [SQL_JOINS](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 
 ### Some Other Things
 #### [Project1](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)

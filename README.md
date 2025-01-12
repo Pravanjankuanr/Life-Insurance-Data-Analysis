@@ -205,32 +205,48 @@ where policy_status = 'InForce';
 - #### Group By Clause
   ##### 1. Retrieve the total premium amount for each policy status.
 ```sql
-
+select policy_status, sum(premium)
+from policy_details
+group by policy_status;
 ```
   ##### 2. Retrieve all the policies issued for each product code.
 ```sql
-
+select product_code, count(proposal_no)
+from policy_details
+group by product_code;
 ```
   ##### 3. Retrieve the average premium term for each premium mode.
 ```sql
-
+select premium_mode, avg(premium)
+from policy_details
+group by premium_mode;
 ```
   ##### 4. Retrieve the .
 ```sql
-
+select emp_name, count(proposal_no)
+from employee
+join policy_details
+	on employee.emp_code = policy_details.emp_code
+group by emp_name;
 ```
 - #### Order By Clause
   ##### 1. Retrieve all policies in ascending order of their issue dates.
 ```sql
-
+select *
+from policy_details
+order by issue_date;
 ```
   ##### 2. Retrieve all the proposals in descending order of their premium amounts.
 ```sql
-
+select *
+from policy_details
+order by premium desc;
 ```
   ##### 3. Retrieve all policies in ascending order of their premium terms.
 ```sql
-
+select *
+from policy_details
+order by premium_term;
 ```
   ##### 4. Retrieve the .
 ```sql
@@ -260,7 +276,7 @@ where policy_status = 'InForce';
 
 
 - #### Joins: Combines related table data
-  ##### 1. Inner Join: dhd
+  ##### 1. Inner Join: Returns only the rows that have matching values in both tables.
 ```sql
 select ptype as Business_type, count(proposal_no) as  Total_sales, sum(premium) Total_revenue
 from policy_details as pd

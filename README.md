@@ -202,7 +202,7 @@ select *
 from policy_details
 where policy_status = 'InForce';
 ```
-- #### Group BY Clause
+- #### Group By Clause
   ##### 1. Retrieve the total premium amount for each policy status.
 ```sql
 
@@ -215,7 +215,51 @@ where policy_status = 'InForce';
 ```sql
 
 ```
+  ##### 4. Retrieve the .
+```sql
 
+```
+- #### Order By Clause
+  ##### 1. Retrieve all policies in ascending order of their issue dates.
+```sql
+
+```
+  ##### 2. Retrieve all the proposals in descending order of their premium amounts.
+```sql
+
+```
+  ##### 3. Retrieve all policies in ascending order of their premium terms.
+```sql
+
+```
+  ##### 4. Retrieve the .
+```sql
+
+```
+- #### Having Clause
+  ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.
+```sql
+
+```
+  ##### 2. Retrieve all the policy statuses with a total premium amount greater than 1000000.
+```sql
+
+```
+  ##### 3. Retrieve all the product codes with an average premium amount greater than 50000?.
+```sql
+
+```
+  ##### 4. Retrieve the .
+```sql
+
+```
+- #### Limit Clause
+
+
+- #### Alias
+
+
+- #### Joins: Combines related table data.
 
 ### Some Other Things
 #### [Project1](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)

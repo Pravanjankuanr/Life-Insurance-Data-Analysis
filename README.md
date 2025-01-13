@@ -272,9 +272,12 @@ order by premium_term;
 - #### Limit Clause
 
 
-- #### Alias
-
-
+- #### Alias: Gives a temporary name to tables or columns
+```sql
+select premium_mode, count(proposal_no) as Total
+from policy_details
+group by premium_mode;
+```
 - #### Joins: Combines related table data
   ##### 1. Inner Join: Returns only the rows that have matching values in both tables.
 ```sql

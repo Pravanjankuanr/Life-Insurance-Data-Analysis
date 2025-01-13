@@ -276,7 +276,7 @@ order by premium_term;
 ```sql
 select premium_mode, count(proposal_no) as Total
 from policy_details
-group by premium_mode;
+group by premium_mode; #The keyword "AS" is used to give an alias to a table or column.
 ```
 - #### Joins: Combines related table data
   ##### 1. Inner Join: Returns only the rows that have matching values in both tables.

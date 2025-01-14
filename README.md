@@ -289,7 +289,7 @@ group by Business_type
 order by Business_type;
 ```
   ##### 2. SQL Joins: The Ultimate Data Connection
-  #### [Mastering SQL Joins](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
+  #### [Mastering in SQL Joins](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 
 ### Some Other Things
 #### [Project1](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)

@@ -202,6 +202,12 @@ select *
 from policy_details
 where policy_status = 'InForce';
 ```
+  ##### 4. Retrieve all policies with a  premium mode of 'Single'.
+```sql
+select * 
+from policy_details
+where premium_mode = 'Single';
+```
 - #### Group By Clause
   ##### 1. Retrieve the total premium amount for each policy status.
 ```sql
@@ -221,13 +227,13 @@ select premium_mode, avg(premium)
 from policy_details
 group by premium_mode;
 ```
-  ##### 4. Retrieve the .
+  ##### 4. Retrieve the total sales of each employee.
 ```sql
 select emp_name, count(proposal_no)
 from employee
 join policy_details
 	on employee.emp_code = policy_details.emp_code
-group by emp_name;
+group by employee.emp_code;
 ```
 - #### Order By Clause
   ##### 1. Retrieve all policies in ascending order of their issue dates.
@@ -248,9 +254,13 @@ select *
 from policy_details
 order by premium_term;
 ```
-  ##### 4. Retrieve the .
+  ##### 4. Retrieved all policies by product name in alphabetical order.
 ```sql
-
+select *
+from policy_details
+inner join product
+	on policy_details.product_code = product.Product_code
+order by product_name;
 ```
 - #### Having Clause
   ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.

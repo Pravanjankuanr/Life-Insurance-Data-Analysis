@@ -51,8 +51,9 @@ create table if not exists customer
 (
 	customer_id varchar(10) primary key
    ,customer_name varchar(50) not null
-); #Create product table
+);
 
+-- Create table 'employee'
 drop table if exists employee;
 create table if not exists employee
 (

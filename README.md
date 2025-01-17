@@ -31,11 +31,13 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
 - Database Creation: Created a database named `LI_DB`.
 - Table Creation: Created tables for product, employee, customer, policy_details, and policy_type. Each table includes relevant columns and relationships.
 ```sql
+-- Create Database 'LI_DB'
 drop database if exists LI_DB;
 create database if not exists LI_DB;
 
-use LI_DB;
+use LI_DB; # To select the database to work
 
+-- Create table 'product'
 drop table if exists product;
 create table if not exists product
 (
@@ -43,12 +45,13 @@ create table if not exists product
    ,product_name varchar(50) not null
 );
 
+-- Create table 'customer'
 drop table if exists customer;
 create table if not exists customer
 (
 	customer_id varchar(10) primary key
    ,customer_name varchar(50) not null
-);
+); #Create product table
 
 drop table if exists employee;
 create table if not exists employee
@@ -57,12 +60,14 @@ create table if not exists employee
    ,emp_name varchar(70) not null
 );
 
+-- Create table 'policy_type'
 drop table if exists policy_type;
 Create table if not exists policy_type(
  ptype_code int primary key
 ,ptype varchar(10) not null
 );
 
+-- Create table 'policy_details'
 drop table if exists policy_details;
 create table if not exists policy_details
 (

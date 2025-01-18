@@ -1,4 +1,3 @@
-
 # Life Insurance Data Analysis using SQL
 
 ## Project Overview
@@ -20,6 +19,7 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
     3. SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.
     4. Table Modification Commands: Managing and modifying table schema for optimal performance.
     5. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
+    6. SQL Execution Order: .
     6. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
 
 ## Project Structure
@@ -271,28 +271,53 @@ order by product_name;
 - #### Having Clause
   ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.
 ```sql
+select emp_name
+from employee emp
+inner join policy_details pd
+ on emp.emp_code = pd.emp_code
+group by emp.emp_code
+having count(emp.emp_code) > 10;
+```
+  ##### 2. Retrieve all the policy statuses with a total premium amount greater than 1000000.
+```sql
+select policy_status, sum(premium)
+from policy_details
+group by policy_status
+having sum(premium) > 1000000;
+```
+  ##### 3. Retrieve all the product codes with an average premium amount greater than 50000.
+```sql
+select product_code, avg(premium)
+from policy_details
+group by product_code
+having avg(premium) > 50000;
+```
+  ##### 4. Retrieve the What are the policy types (ptype_code) with a count of policies greater than 50.
+```sql
+
+```
+- #### Limit Clause
+  ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.
+```sql
 
 ```
   ##### 2. Retrieve all the policy statuses with a total premium amount greater than 1000000.
 ```sql
 
 ```
-  ##### 3. Retrieve all the product codes with an average premium amount greater than 50000?.
+  ##### 3. Retrieve all the product codes with an average premium amount greater than 50000.
 ```sql
 
 ```
-  ##### 4. Retrieve the .
+  ##### 4. Retrieve the What are the policy types (ptype_code) with a count of policies greater than 50.
 ```sql
 
 ```
-- #### Limit Clause
-
-
 - #### Alias: Gives a temporary name to tables or columns
 ```sql
 select premium_mode, count(proposal_no) as Total
 from policy_details
-group by premium_mode; #The keyword "AS" is used to give an alias to a table or column.
+group by premium_mode; #The keyword "AS" is used to give an alias to a table/column.
 ```
 - #### Joins: Combines related table data
   ##### 1. Inner Join: Returns only the rows that have matching values in both tables.

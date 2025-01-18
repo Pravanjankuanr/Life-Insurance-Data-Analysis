@@ -19,7 +19,7 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
     3. SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.
     4. Table Modification Commands: Managing and modifying table schema for optimal performance.
     5. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
-    6. SQL Execution Order: .
+    6. SQL Execution Order: The sequence in which a SQL query is processed.
     6. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
 
 ## Project Structure
@@ -35,7 +35,7 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
 drop database if exists LI_DB;
 create database if not exists LI_DB;
 
-use LI_DB; # To select the database to work
+use LI_DB; #To select the database to work
 
 -- Create table 'product'
 drop table if exists product;

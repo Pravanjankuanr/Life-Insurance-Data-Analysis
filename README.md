@@ -20,7 +20,7 @@ This project demonstrates the implementation of Life Insurance using SQL. It inc
     4. Table Modification Commands: Managing and modifying table schema for optimal performance.
     5. CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
     6. SQL Execution Order: The sequence in which a SQL query is processed.
-    6. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
+    7. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data.
 
 ## Project Structure
 
@@ -188,7 +188,12 @@ order by total_sales desc;
 
 select * from employee_sales;
 ```
-### 6. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data
+### 6. SQL Execution Order:
+- #### The sequence in which a SQL query is processed.
+
+![Logo](Data_modeling.jpg)
+
+### 7. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data
 - #### Where Clause
   ##### 1. Retrieve all records with a premium value of 100,000 or higher.
 ```sql

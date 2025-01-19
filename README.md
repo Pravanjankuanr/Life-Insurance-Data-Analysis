@@ -191,7 +191,7 @@ select * from employee_sales;
 ### 6. SQL Execution Order:
 - #### The sequence in which a SQL query is processed.
 
-![Logo](Data_modeling.jpg)
+![Logo](SQL-Execution-Order.jpg)
 
 ### 7. Advanced SQL Queries: Develop complex queries to analyze and retrieve specific data
 - #### Where Clause

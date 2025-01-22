@@ -297,9 +297,14 @@ from policy_details
 group by product_code
 having avg(premium) > 50000;
 ```
-  ##### 4. Retrieve the What are the policy types (ptype_code) with a count of policies greater than 50.
+  ##### 4. Retrieve the policy type  with a count of policies greater than 2000.
 ```sql
-
+select ptype, count(proposal_no) as count
+from policy_details pd
+inner join policy_type pt
+	on pd.ptype_code = pt.ptype_code
+group by ptype
+having count(proposal_no) > 2000;
 ```
 - #### Limit Clause
   ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.

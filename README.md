@@ -274,7 +274,7 @@ inner join product
 order by product_name;
 ```
 - #### Having Clause
-  ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.
+  ##### 1. Retrieve all the employees who have issued more than 10 policies.
 ```sql
 select emp_name
 from employee emp

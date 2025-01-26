@@ -307,19 +307,19 @@ group by ptype
 having count(proposal_no) > 2000;
 ```
 - #### Limit Clause
-  ##### 1. Retrieve all Which employee (emp_code) has issued more than 10 policies?.
+  ##### 1. Retrieve the top 10 employees who made the highest sales.
 ```sql
 
 ```
-  ##### 2. Retrieve all the policy statuses with a total premium amount greater than 1000000.
+  ##### 2. Retrieve the employee who made the first sale in the year 2024.
 ```sql
 
 ```
-  ##### 3. Retrieve all the product codes with an average premium amount greater than 50000.
+  ##### 3. Retrieve the top 3 products that contribute the most to the revenue.
 ```sql
 
 ```
-  ##### 4. Retrieve the What are the policy types (ptype_code) with a count of policies greater than 50.
+  ##### 4. Retrieve the top 3 customers who have the highest premium.
 ```sql
 
 ```

@@ -327,10 +327,10 @@ having count(proposal_no) > 2000;
 ```sql
 select premium_mode, count(proposal_no) as Total
 from policy_details
-group by premium_mode; #The keyword "AS" is used to give an alias to a table/column.
+group by premium_mode; #The keyword "AS" gives an alias to a table/column.
 ```
 - #### Joins: Combines related table data
-  ##### 1. Inner Join: Returns only the rows that have matching values in both tables.
+  ##### 1. Inner Join: Returns only the rows with matching values in both tables.
 ```sql
 select ptype as Business_type, count(proposal_no) as  Total_sales, sum(premium) Total_revenue
 from policy_details as pd
@@ -342,7 +342,7 @@ order by Business_type;
   ##### 2. SQL Joins: The Ultimate Data Connection
   #### [Mastering in SQL Joins](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 
-### Some Other Things
+### Discover More
 #### [Project1](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 #### [Project2](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 #### [Project3](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)

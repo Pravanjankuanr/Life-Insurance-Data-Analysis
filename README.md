@@ -323,19 +323,43 @@ having count(proposal_no) > 2000;
 - #### Limit Clause
   ##### 1. Retrieve the top 10 employees who made the highest sales.
 ```sql
-
+select emp_name, sum(premium) Total_Amount
+from employee emp
+inner join policy_details pd
+	on emp.emp_code = pd.emp_code
+group by emp.emp_code
+order by sum(premium) desc
+limit 10;
 ```
   ##### 2. Retrieve the employee who made the first sale in the year 2024.
 ```sql
-
+select emp_name, issue_date
+from employee emp
+inner join policy_details pd
+	on emp.emp_code = pd.emp_code
+where issue_date >= '2024-01-01'
+order by issue_date
+limit 1;
 ```
   ##### 3. Retrieve the top 3 products that contribute the most to the revenue.
 ```sql
-
+select product_name, sum(premium)
+from product pro
+inner join policy_details pd
+	on pro.Product_code = pd.Product_code
+group by pro.Product_code
+order by sum(premium) desc
+limit 3;
 ```
   ##### 4. Retrieve the top 3 customers who have the highest premium.
 ```sql
-
+select customer_name, sum(premium)
+from customer cust
+inner join policy_details pd
+	on cust.customer_id = pd.customer_id
+group by cust.customer_id
+order by sum(premium) desc
+limit 5;
 ```
 - #### Alias: Gives a temporary name to tables or columns
 ```sql

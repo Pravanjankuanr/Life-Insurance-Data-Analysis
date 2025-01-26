@@ -129,24 +129,38 @@ where emp_code is null; #delete all rows from employee where conditions are met
 ### 3. SQL Administrative Commands
 - #### SQL Administrative Commands: Managing and maintaining SQL database systems efficiently.
 ```sql
-show databases; #displays all databases on the server
+-- Display all 'Databases' on the server
+show databases;
 
-show tables; #displays all tables in the current database
+-- Display all 'Tables' in the current database
+show tables; 
 
-show columns in product; # 1. displays column information for a specified table
+-- Display 'Columns' information for a specified table
+show columns in product;
+show columns from product;
 
-show columns from product; # 2. displays column information for a specified table
+-- Display 'Index' information for a specified table
+show index from product;
+show index in product;
 
-show index from product; # 1. displays index information for a specified table
-show index in product; # 2. displays index information for a specified table
-show indexes in product; # 3. displays index information for a specified table
-show indexes from product; # 4. displays index information for a specified table
+show indexes in product;
+show indexes from product;
+
+-- Display the structure of a table
+DESCRIBE policy_details;
+
+-- Display the 'Server' version
+SELECT VERSION();
+SHOW VARIABLES LIKE '%version%';
+
+-- Display the 'Server' variables
+SHOW GLOBAL VARIABLES;
+SHOW SESSION VARIABLES;
+
+-- Display the 'running' processes
+SHOW FULL PROCESSLIST;
+SHOW PROCESSLIST;
 ```
-- #### Check all tables in the current database
-```sql
-
-```
-
 ### 4. Table Modification Commands: Managing and modifying table schema for optimal performance
 - #### Add Column:
 ```sql

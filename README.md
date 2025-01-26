@@ -342,7 +342,7 @@ order by Business_type;
   ##### 2. SQL Joins: The Ultimate Data Connection
   #### [Mastering in SQL Joins](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 
-### Discover More
+### Explore Exciting Projects
 #### [Project1](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 #### [Project2](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 #### [Project3](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)

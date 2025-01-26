@@ -321,7 +321,7 @@ group by ptype
 having count(proposal_no) > 2000;
 ```
 - #### Limit Clause
-  ##### 1. Retrieve the top 10 employees who made the highest sales.
+  ##### 1. Retrieve the top 10 employees who made the highest Sales(Premium).
 ```sql
 select emp_name, sum(premium) Total_Amount
 from employee emp
@@ -351,7 +351,7 @@ group by pro.Product_code
 order by sum(premium) desc
 limit 3;
 ```
-  ##### 4. Retrieve the top 3 customers who have the highest premium.
+  ##### 4. Retrieve the top 5 customers who have the highest premium.
 ```sql
 select customer_name, sum(premium)
 from customer cust

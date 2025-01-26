@@ -362,3 +362,4 @@ order by Business_type;
 #### [Project3](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
 
 ### Conclusion
+This project effectively demonstrated the application of SQL in analyzing and managing life insurance data, highlighting its efficacy in extracting valuable insights and optimizing data management.

@@ -377,12 +377,12 @@ group by Business_type
 order by Business_type;
 ```
   ##### 2. SQL Joins: The Ultimate Data Connection
-  #### [Mastering in SQL Joins](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
+  #### [Mastering in SQL Joins](https://github.com/Pravanjankuanr/Life-Insurance-Data-Analysis)
 
 ### Explore Exciting Projects
-#### [Project1](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
-#### [Project2](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
-#### [Project3](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)
+#### [Project1](https://github.com/Pravanjankuanr/Life-Insurance-Data-Analysis)
+#### [Project2](https://github.com/Pravanjankuanr/Life-Insurance-Data-Analysis)
+#### [Project3](https://github.com/Pravanjankuanr/Life-Insurance-Data-Analysis)
 
 ### Conclusion
 This project effectively demonstrated the application of SQL in analyzing and managing life insurance data, highlighting its efficacy in extracting valuable insights and optimizing data management.

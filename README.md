@@ -113,7 +113,6 @@ select * from policy_type;
 ```
 - #### Update: Update record in the policy_type table.
 ```sql
-#Update Record
 update policy_type
 set ptype = 'NewPolicy'
 where ptype = 'New';

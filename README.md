@@ -385,4 +385,5 @@ order by Business_type;
 #### [Project3](https://github.com/Pravanjankuanr/Life-Insurance-Data-Analysis)
 
 ### Conclusion
+
 This project effectively demonstrated the application of SQL in analyzing and managing life insurance data, highlighting its efficacy in extracting valuable insights and optimizing data management.
